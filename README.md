@@ -1,30 +1,45 @@
 # Bank Transactions Analysis Dashboard
-# Deskripsi
-Dashboard ini merupakan aplikasi interaktif berbasis web yang dibangun menggunakan Streamlit. Aplikasi ini digunakan untuk melakukan analisis data transaksi bank, termasuk visualisasi distribusi transaksi, analisis jumlah transaksi berdasarkan usia dan pekerjaan, serta segmentasi pelanggan menggunakan metode RFM (Recency, Frequency, Monetary).
 
-# Fitur Dashboard
-Filter Interaktif:
+### Deskripsi
 
-Jenis transaksi (Transaction Type)
+Dashboard ini merupakan aplikasi interaktif berbasis **Streamlit** untuk menganalisis data transaksi bank, termasuk visualisasi transaksi berdasarkan **Channel**, **Transaction Type**, **Age Group**, dan **Customer Occupation**, serta segmentasi pelanggan menggunakan analisis **RFM** (Recency, Frequency, Monetary).
 
-Channel transaksi (Channel)
+### Persyaratan
 
-Kelompok umur pelanggan (Age Group)
+* Python 3.8 atau lebih baru
+* pip untuk mengelola dependensi
 
-Statistik Ringkas:
+### Instalasi dan Setup
 
-Total transaksi
+1. **Clone repositori** dan masuk ke direktori proyek:
 
-Rata-rata jumlah transaksi
+   bash
+   git clone https://github.com/username/project_name.git
+   cd project_name
+   
 
-Jumlah pelanggan unik
+2. **Buat virtual environment** (opsional):
 
-Visualisasi Data:
+ bash
+   python -m venv env
+   source env/bin/activate  # Untuk Windows: env\Scripts\activate
+ 
 
-Distribusi transaksi berdasarkan Channel dan Jenis Transaksi (Bar Plot)
+3. **Instal dependensi**:
 
-Rata-rata jumlah transaksi berdasarkan Kelompok Umur dan Pekerjaan Pelanggan (Bar Plot)
+ bash
+   pip install -r requirements.txt
+  
 
-Analisis RFM:
+### Menjalankan Dashboard
 
-Distribusi Recency, Frequency, dan Monetary dari pelanggan (Histogram)
+Untuk menjalankan aplikasi Streamlit, gunakan perintah berikut:
+
+bash
+streamlit run app.py
+
+
+Dashboard akan tersedia di **localhost** pada port **8501**:
+
+http://localhost:8501
+
